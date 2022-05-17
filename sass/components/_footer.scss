@@ -1,0 +1,59 @@
+.footer {
+  background-color: var(--bgc-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts {
+  // @include flex(flex, baseline, null); - для  1200px
+}
+
+.main-contacts {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  // margin-right: 70px; -  для  1200px
+}
+
+.main-contacts__address {
+  margin-bottom: 60px;
+  // width: 231px;
+}
+
+.main-contacts__link {
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &--map {
+    color: var(--secondary-text-color);
+  }
+}
+
+.main-contacts__item:not(:last-child) {
+  margin-bottom: 8px;
+  // margin-bottom: 9px;
+}
+
+.social-network {
+  margin-bottom: 60px;
+  // margin-right: auto;
+}
+
+.contacts__title {
+  text-align: center;
+  // для 1200px без text-align
+
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}

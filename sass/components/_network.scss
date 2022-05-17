@@ -1,0 +1,30 @@
+.network-list {
+  @include flex (flex, null, center);
+}
+
+.network-list__item + .network-list__item {
+  margin-left: 10px;
+}
+
+.network-list__link {
+  @include flex (flex, center, center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-color);
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+
+  &--footer {
+    fill: var(--secondary-text-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--timing-function);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--secondary-text-color);
+  }
+}
