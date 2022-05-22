@@ -411,10 +411,15 @@ img {
 .menu-top__link {
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition: color 250ms var(--timing-function);
+}
+@media screen and (max-width: 400px) {
+  .menu-top__link {
+    font-size: 26px;
+  }
 }
 .menu-top__link:hover, .menu-top__link:focus {
   color: var(--accent-color);
@@ -439,6 +444,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (max-width: 400px) {
+  .menu-bottom__link.tel {
+    font-size: 20px;
+  }
+}
 
 .menu-bottom__link.email {
   font-weight: 500;
@@ -447,6 +457,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   transition: color 250ms var(--timing-function);
+}
+@media screen and (max-width: 400px) {
+  .menu-bottom__link.email {
+    font-size: 18px;
+  }
 }
 .menu-bottom__link.email:hover, .menu-bottom__link.email:focus {
   color: var(--accent-color);
@@ -463,6 +478,11 @@ img {
 .soc-list__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
+@media screen and (max-width: 400px) {
+  .soc-list__item {
+    padding: 0 3px;
+  }
+}
 
 .soc-list__link {
   font-weight: 500;
@@ -470,6 +490,11 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 400px) {
+  .soc-list__link {
+    font-size: 12px;
+  }
 }
 
 .hero {
