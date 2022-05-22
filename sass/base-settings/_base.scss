@@ -32,15 +32,21 @@ ol {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
+  outline: 1px solid red;
+
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
