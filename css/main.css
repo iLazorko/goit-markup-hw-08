@@ -376,17 +376,11 @@ img {
   background-color: var(--bgc-total);
   width: 100vw;
   height: 100vh;
-  transition: transform 1000ms linear;
-  transform: translate(0);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
-}
-
-.mob-menu.is-hidden {
-  transform: translateX(-100%);
 }
 
 .mob-menu .container {
