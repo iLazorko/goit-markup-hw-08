@@ -25,24 +25,23 @@
             ><span class="logo__text">Web</span>Studio</a
           >
         </div>
-        <button type="button" class="header__btn">
+        <button type="button" class="header__btn menu-open-btn">
           <svg width="40" height="40">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
-          <!-- <svg width="40" height="40">
-            <use href="./images/icons.svg#icon-menu-close"></use>
-          </svg> -->
         </button>
         <div class="navigation">
           <nav class="site-nav">
             <ul class="site-nav__list list">
               <li class="site-nav__item">
-                <a class="site-nav__link link" href="./index.html">Студия</a>
+                <a
+                  class="site-nav__link link site-nav__link--current"
+                  href="./index.html"
+                  >Студия</a
+                >
               </li>
               <li class="site-nav__item">
-                <a
-                  class="site-nav__link site-nav__link--current link"
-                  href="./portfolio.html"
+                <a class="site-nav__link link" href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
@@ -73,6 +72,63 @@
               >
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="menu-top__list list">
+              <li class="menu-top__item">
+                <a class="menu-top__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="menu-top__item">
+                <a class="menu-top__link link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-top__item">
+                <a class="menu-top__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-bottom">
+            <ul class="menu-bottom__list list">
+              <li class="menu-bottom__item">
+                <a class="menu-bottom__link tel link" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="menu-bottom__item">
+                <a
+                  class="menu-bottom__link email link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="soc-list list">
+              <li class="soc-list__item">
+                <a href="" class="soc-list__link link">Instagram</a>
+              </li>
+              <li class="soc-list__item">
+                <a href="" class="soc-list__link link">Twitter</a>
+              </li>
+              <li class="soc-list__item">
+                <a href="" class="soc-list__link link">Facebook</a>
+              </li>
+              <li class="soc-list__item">
+                <a href="" class="soc-list__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
