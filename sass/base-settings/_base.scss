@@ -37,7 +37,9 @@ img {
 }
 
 .no-scroll {
-  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
 }
 
 .container {
